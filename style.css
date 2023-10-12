@@ -1,10 +1,14 @@
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #bgcolor{
   background-color: blue;
   color: white;
 }
 p{
-  background-color: yellow;
+  background-color: rgb(39, 39, 24);
   color: white;
-
 }
+
