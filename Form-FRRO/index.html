@@ -1,530 +1,529 @@
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-    <html>
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-      <meta http-equiv='pragma' content='no-cache'>
-      <meta http-equiv="Cache-control" content="private">
-      <meta http-equiv="Cache-control" content="no-cache">
-      <meta http-equiv="Cache-control" content="no-store">
-      <meta http-equiv="Cache-control" content="must-revalidate">
-      <meta HTTP-EQUIV="expires" CONTENT="0">
-      <meta http-equiv='pragma' content='no-cache'>
-        <title>User Registration Page</title>    
-    <link href="commonstyle.css" rel="stylesheet" type="text/css" />	
-    <link rel="stylesheet" href="style.css">	
-      <style type="text/css"> 
-        .ToolText{position:relative; } 
-        .ToolTextHover{position:relative;} 
-        .ToolText span{display: none;} 
-        .ToolTextHover span{ 
-                    display:block; 
-                    position:absolute; 
-                    border:1px solid black; 
-                    top:1.3em; 
-                    left:5px; 
-                    background-color:gray; 
-                    color:white; 
-                    text-align: center; 
-                  } 
-      </style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta http-equiv="Cache-control" content="private">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-store">
+  <meta http-equiv="Cache-control" content="must-revalidate">
+  <meta HTTP-EQUIV="expires" CONTENT="0">
+  <meta http-equiv='pragma' content='no-cache'>
+    <title>User Registration Page</title>    
+<link href="commonstyle.css" rel="stylesheet" type="text/css" />	
+<link rel="stylesheet" href="style.css">	
+  <style type="text/css"> 
+    .ToolText{position:relative; } 
+    .ToolTextHover{position:relative;} 
+    .ToolText span{display: none;} 
+    .ToolTextHover span{ 
+                display:block; 
+                position:absolute; 
+                border:1px solid black; 
+                top:1.3em; 
+                left:5px; 
+                background-color:gray; 
+                color:white; 
+                text-align: center; 
+              } 
+  </style>
+      
+  <style type="text/css">		
+  <!--
+    body {
+        background-image: url(image/page_bg.gif);
+       }
+    .style10 {color: #FF0000}
+    .style11 {font-size: 18px}
+    .style12 {font-size: 10pt}
+    .style13 {color: #666666}
+    .style14 {color: #FFFFFF}
+    .style15 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 11px;
+          color: #FFFFFF;
+         }
+    .style16 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 11px;
+          color: #444444;
+         }
+    .style38 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 11px;
+          color: #0066CC
+         }
+    .style39 {
+          font-size: 11px;
+          color: #000000;
+          cursor: default;
+          font-family: Arial, Helvetica, sans-serif;
+         }
+    .style43 {cursor: default; font-size: 12px; color: #0066FF;}
+    .style46 {
+          font-family: Verdana, Tahoma;
+          color: #CC33CC;
+          font-weight: bold;
+         }
+    .style50 {color: #0066CC; font-weight: bold; }
+    .style51 {color: #CC33CC}
+    
+    .fieldboxes {
+        color: #333333;
+        font-size: 12px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background-color: #FFFFFF;
+        border: 1px solid #999999;
+
+          }		
+    -->
+  </style>
+    
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#c0c0c0">
+
+
+<table width="77%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="white" style="border:1px solid #ffffff; -webkit-border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; border-radius:10px;">  	
+    <tr>				
+      <td bgcolor="#112aa3">
+        <table  width="100%" height="85" cellpadding="0" cellspacing="0"  style="border:0px solid #ffffff; -webkit-border-radius:100px; -moz-border-radius:100px; -ms-border-radius:100px; border-radius:100px;">
+          <tr>
+            <td width="10%"><img src="logo.jpg" width="80" height="80" style="border: 2px double white; border-radius: 50%; margin: 0.5rem;" /></td>
+            <td align="center" bgcolor="#112aa3"><font style="padding-left: 50px"  color="white" size="5"><strong>User Registration for Form 'C' and Form 'S' </strong></font></td>
+            <td  bgcolor="#112aa3" valign="bottom" >
+              <font color="white">
+                <div id="timer" style="float: right; padding: 10px;font-size: medium;font-family: Arial, Helvetica, sans-serif;vertical-align: bottom;"></div>
+              </font>
+            </td>
+          </tr>
+        </table>
+            </td>			
+    </tr>	
+    
+    <tr bgcolor="#95CFFF" background="image/heading.gif" align='right'>
+      <td height="15" colspan="8" nowrap background="image/heading.gif" class="style38" >
+        <strong>
+          <a style="text-decoration: none;" href = "menuuserreg.jsp" ><font color="#ffffff">Back</font></a>&nbsp;&nbsp;
+          <a style="text-decoration: none" href = "login.jsp" ><font color="#ffffff">Login</font></a>&nbsp;
+        </strong>
+      </td>				
+    </tr>
+        
+    <tr>
+      <td width="100%" valign="top">
+        <form name="Registration" method="post" action="" htmlEscape="true">
+          <table width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFDBAE" bgcolor="#FFFFFF">
+            <input type="hidden" size="25" maxlength="25" AUTOCOMPLETE=OFF name="t4g" value="15361Q01"  />		
+            <tr bgcolor="#95CFFF" background="image/heading.gif">
+              <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Individual Registration&nbsp;</font></strong></td>
+              <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Help&nbsp;</font></strong></td>
+            </tr>					
           
-      <style type="text/css">		
-      <!--
-        body {
-            background-image: url(image/page_bg.gif);
-           }
-        .style10 {color: #FF0000}
-        .style11 {font-size: 18px}
-        .style12 {font-size: 10pt}
-        .style13 {color: #666666}
-        .style14 {color: #FFFFFF}
-        .style15 {
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 11px;
-              color: #FFFFFF;
-             }
-        .style16 {
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 11px;
-              color: #444444;
-             }
-        .style38 {
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 11px;
-              color: #0066CC
-             }
-        .style39 {
-              font-size: 11px;
-              color: #000000;
-              cursor: default;
-              font-family: Arial, Helvetica, sans-serif;
-             }
-        .style43 {cursor: default; font-size: 12px; color: #0066FF;}
-        .style46 {
-              font-family: Verdana, Tahoma;
-              color: #CC33CC;
-              font-weight: bold;
-             }
-        .style50 {color: #0066CC; font-weight: bold; }
-        .style51 {color: #CC33CC}
-        
-        .fieldboxes {
-            color: #333333;
-            font-size: 12px;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            background-color: #FFFFFF;
-            border: 1px solid #999999;
+            <tr>
+              <td id="usid" height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">User ID <font color="red">* </font><br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <input AUTOCOMPLETE=OFF  name="u_id" type="text" class="fieldboxes" id="u_id" size="20" maxlength="20" value="" onKeyUp="chkStringuserids(this);" onBlur='CheckUser(this.value)' /><div id='useralert'></div>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">User ID is case sensitive, minimum one alphabetic character and minimum one numeric character<br> </td>
+            </tr>
+            
+          
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Password <font color="red">*</font>  </td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                  <input AUTOCOMPLETE=OFF  name="u_pwd" class="fieldboxes" type="password" id="u_pwd" size="50" maxlength="50" value=""/>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38"> min 8 chars,use at least one special character <br>(/ . [~ ! @ ' # $ % ^ & * ? _ ~ - , () ] + / )! "),number,lowercase,<br>uppercase letter <br></td>
+            </tr>
+            
+          
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Confirm Password <font color="red">*</font>  </td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                  <input AUTOCOMPLETE=OFF  name="u_repwd" class="fieldboxes" type="password" onKeyUp=""  id="u_repwd" size="50" maxlength="50" value=""/>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
+            </tr>
+            
+            
+            <tr bgcolor="#95CFFF" background="image/heading.gif">
+              <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38" >
+                <strong><font color="#ffffff">If you forget your password we will identify you with this information<br></font></strong>
+              </td>
+              <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
+            </tr>
+          
+            <tr>		
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Security Question <font color="red">*</font>  </td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <font size="1">
+                  <select name="u_secques" class="style16" id="u_secques">
+                    <option value="">Select</option>
+                    <option  value='2'> What is the name of the hospital where you were born?</option><option  value='4'> What is the name of the street where you grew up?</option><option  value='3'> What is the name of your favorite book?</option><option  value='1'> What is your favorite author?</option><option  value='5'> where did you meet your spouse?</option>
+                  </select>
+                </font>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;In case you forget password, we will identify <br>you by this<br></td>
+            </tr>
+            
     
-              }		
-        -->
-      </style>
-        
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    </head>
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Your Answer <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            <!--  	<input name="u_secans" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkStringuserids(this);" type="text"  id="u_secans" size="50" maxlength="150" value="<!%= usr.getU_secans() %>"/>	-->
+                <input name="u_secans" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkAlphaNumSp(this);" onblur="trim1(this)" type="text" id="u_secans" size="50" maxlength="150" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+          <!--  		<input name="u_name" AUTOCOMPLETE=OFF class="fieldboxes" type="text" onKeyUp="chkString(this);"  onKeyUp="" id="u_name" size="50" maxlength="50" value="<!%= usr.getU_name() %>"/>	-->
+                <input name="u_name" AUTOCOMPLETE=OFF class="fieldboxes" type="text" onKeyUp="chkString(this);" onblur="trim1(this)" id="u_name" size="50" maxlength="50" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">Gender <font color="red">*</font>&nbsp; </div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF" class="style16">
+                <font size="3">
+                  <select name="u_gender" class="style16" id="u_gender">
+                    <option value="">Select</option>
+                    <option  value='M'> Male</option><option  value='F'> Female</option><option  value='X'> Transgender</option>							
+                  </select>
+                </font>
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="helpText">&nbsp;</td>
+            </tr>
+            
     
-    <body bgcolor="#c0c0c0">
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">Date of Birth <font color="red">*</font> <br></div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+                <input type="text" class="fieldboxes" AUTOCOMPLETE=OFF   name="u_dob" id="u_dob" maxlength="10" onKeyUp="chkDatechars(this);" size="20" datepicker="true" datepicker_min="01/01/1900" datepicker_max="13/10/2023" value="" >
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Designation <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <input name="u_designation" type="text" AUTOCOMPLETE=OFF  onKeyUp="chkString(this);" onblur="trim1(this)" class="fieldboxes"  id="u_designation" size="20" maxlength="50" value=""/>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            <!--  	<input name="u_emailid" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" id="u_emailid" size="20" maxlength="50" value="<!%= usr.getU_emailid() %>"/>	-->
+                <input name="u_emailid" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onblur="ValidateEmail(this); trim1(this)" id="u_emailid" size="20" maxlength="50" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;For Correspondence, New Password<br> </td>
+            </tr>
+            
     
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            <!--  	<input name="u_mobile" type="text" AUTOCOMPLETE=OFF onKeyUp="chkInt(this)" class="fieldboxes"  onKeyUp="" id="u_mobile" size="20" maxlength="15" value="<!%= usr.getU_mobile() %>"/>	-->
+                <input name="u_mobile" type="text" AUTOCOMPLETE=OFF onKeyUp="chkPhone(this)" onblur="trim1(this)" class="fieldboxes" id="u_mobile" size="20" maxlength="15" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory<br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            <!--  	<input name="u_phone" type="text" AUTOCOMPLETE=OFF   class="fieldboxes" onKeyUp="chkInt(this)" onKeyUp="" id="u_phone" size="20" maxlength="15" value="<!%= usr.getU_phone() %>"/>	-->
+                <input name="u_phone" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkPhone(this)" onblur="trim1(this)" id="u_phone" size="20" maxlength="15" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
     
-    <table width="77%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="white" style="border:1px solid #ffffff; -webkit-border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; border-radius:10px;">  	
-        <tr>				
-          <td bgcolor="#112aa3">
-            <table  width="100%" height="85" cellpadding="0" cellspacing="0"  style="border:0px solid #ffffff; -webkit-border-radius:100px; -moz-border-radius:100px; -ms-border-radius:100px; border-radius:100px;">
-              <tr>
-                <td width="10%"><img src="logo.jpg" width="80" height="80" style="border: 2px double white; border-radius: 50%; margin: 0.5rem;" /></td>
-                <td align="center" bgcolor="#112aa3"><font style="padding-left: 50px"  color="white" size="5"><strong>User Registration for Form 'C' and Form 'S' </strong></font></td>
-                <td  bgcolor="#112aa3" valign="bottom" >
-                  <font color="white">
-                    <div id="timer" style="float: right; padding: 10px;font-size: medium;font-family: Arial, Helvetica, sans-serif;vertical-align: bottom;"></div>
-                  </font>
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Nationality <font color="red">*</font></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <font size="1">
+                  <select name="u_nationality" id="u_nationality" class="style16" id="">
+                    <option value="IND">INDIA</option>				
+                    <option  value='AFG'> AFGHANISTAN</option><option  value='ALA'> ALAND ISLANDS</option><option  value='ALB'> ALBANIA</option><option  value='DZA'> ALGERIA</option><option  value='ASM'> AMERICAN SAMOA</option><option  value='AND'> ANDORRA</option><option  value='AGO'> ANGOLA</option><option  value='AIA'> ANGUILLA</option><option  value='ATA'> ANTARCTICA</option><option  value='ATG'> ANTIGUA AND BARBUDA</option><option  value='ARG'> ARGENTINA</option><option  value='ARM'> ARMENIA</option><option  value='ABW'> ARUBA</option><option  value='AUS'> AUSTRALIA</option><option  value='AUT'> AUSTRIA</option><option  value='AZE'> AZERBAIJAN</option><option  value='BHS'> BAHAMAS</option><option  value='BHR'> BAHRAIN</option><option  value='BGD'> BANGLADESH</option><option  value='BRB'> BARBADOS</option><option  value='BLR'> BELARUS</option><option  value='BEL'> BELGIUM</option><option  value='BLZ'> BELIZE</option><option  value='BEN'> BENIN (DAHOMEY)</option><option  value='BMU'> BERMUDA</option><option  value='BTN'> BHUTAN</option><option  value='BOL'> BOLIVIA</option><option  value='BIH'> BOSNIA AND HERZEGOVINA</option><option  value='BWA'> BOTSWANA</option><option  value='BVT'> BOUVET ISLAND</option><option  value='BRA'> BRAZIL</option><option  value='IOT'> BRITISH INDIAN OCEAN TERRITORY</option><option  value='BRN'> BRUNEI DARUSSALAM</option><option  value='BGR'> BULGARIA</option><option  value='BFA'> BURKINA FASO ( UPPER VOLTA)</option><option  value='BDI'> BURUNDI</option><option  value='KHM'> CAMBODIA (KAMPUCHEA)</option><option  value='CMR'> CAMEROON</option><option  value='CAN'> CANADA</option><option  value='CPV'> CAPE VERDE ISLANDS</option><option  value='XCC'> CARRIBEAN COMMUNITY</option><option  value='CYM'> CAYMAN ISLANDS</option><option  value='CAF'> CENTRAL AFRICAN REPUBLIC</option><option  value='TCD'> CHAD</option><option  value='CHL'> CHILE</option><option  value='CHN'> CHINA</option><option  value='CXR'> CHRISTMAS ISLANDS</option><option  value='CCK'> COCOS (KEELING) ISLANDS</option><option  value='COL'> COLOMBIA</option><option  value='COM'> COMOROS</option><option  value='COG'> CONGO</option><option  value='COD'> CONGO, DEMOCRATIC REPUBLIC OF THE (ZAIRE)</option><option  value='COK'> COOK ISLANDS</option><option  value='CRI'> COSTA RICA</option><option  value='CIV'> COTE DIVOIRE</option><option  value='HRV'> CROATIA -REPUBLIC OF CROATIA</option><option  value='CUB'> CUBA</option><option  value='CYP'> CYPRUS</option><option  value='CZE'> CZECH REPUBLIC</option><option  value='DNK'> DENMARK</option><option  value='DJI'> DJIBOUTI</option><option  value='DMA'> DOMINICA</option><option  value='DOM'> DOMINICAN REPUBLIC</option><option  value='TLS'> EAST TIMOR, DEMOCRATIC REPUBLIC OF</option><option  value='ECU'> ECUADOR</option><option  value='EGY'> EGYPT</option><option  value='SLV'> EL SALVADOR</option><option  value='GNQ'> EQUITORIAL GUINEA</option><option  value='ERI'> ERITREA</option><option  value='EST'> ESTONIA</option><option  value='ETH'> ETHIOPIA</option><option  value='FLK'> FALKLAND ISLANDS (MALVINAS)</option><option  value='FRO'> FAROE ISLANDS</option><option  value='FJI'> FIJI</option><option  value='FIN'> FINLAND</option><option  value='FRA'> FRANCE</option><option  value='FXX'> FRANCE METROPOLITAN</option><option  value='GUF'> FRENCH GUIANA</option><option  value='ATF'> FRENCH SOUTHERN TERRITORIES</option><option  value='GAB'> GABON</option><option  value='GMB'> GAMBIA</option><option  value='GEO'> GEORGIA</option><option  value='DEU'> GERMANY</option><option  value='GHA'> GHANA</option><option  value='GIB'> GIBRALTAR</option><option  value='GRC'> GREECE</option><option  value='GRL'> GREENLAND</option><option  value='GRD'> GRENADA</option><option  value='GLP'> GUADELOUPE</option><option  value='GUM'> GUAM</option><option  value='GTM'> GUATEMALA</option><option  value='GGY'> GUERNSEY</option><option  value='GIN'> GUINEA</option><option  value='GNB'> GUINEA BISSAU</option><option  value='GUY'> GUYANA</option><option  value='HTI'> HAITI</option><option  value='HMD'> HEARD AND MCDONALD ISLANDS</option><option  value='VAT'> HOLY SEE (VATICAN CITY STATE)</option><option  value='HND'> HONDURAS</option><option  value='HKG'> HONG KONG</option><option  value='HUN'> HUNGARY</option><option  value='ISL'> ICELAND</option><option  value='IND'> INDIA</option><option  value='IDN'> INDONESIA</option><option  value='IRN'> IRAN</option><option  value='IRQ'> IRAQ</option><option  value='IRL'> IRELAND</option><option  value='IMN'> ISLE OF MAN</option><option  value='ISR'> ISRAEL</option><option  value='ITA'> ITALY</option><option  value='JAM'> JAMAICA</option><option  value='JPN'> JAPAN</option><option  value='JEY'> JERSEY</option><option  value='JOR'> JORDAN</option><option  value='KAZ'> KAZAKHSTAN</option><option  value='KEN'> KENYA</option><option  value='KIR'> KIRIBATI</option><option  value='PRK'> KOREA, DEMOCRATIC PEOPLES REPUBLIC OF</option><option  value='KOR'> KOREA, REPUBLIC OF</option><option  value='KWT'> KUWAIT</option><option  value='KGZ'> KYRGYZSTAN</option><option  value='LAO'> LAOS</option><option  value='LVA'> LATVIA</option><option  value='LBN'> LEBANON</option><option  value='LSO'> LESOTHO</option><option  value='LBR'> LIBERIA</option><option  value='LBY'> LIBYA</option><option  value='LIE'> LIECHTENSTEIN</option><option  value='LTU'> LITHUANIA</option><option  value='LUX'> LUXEMBOURG</option><option  value='MAC'> MACAU</option><option  value='MDG'> MADAGASCAR</option><option  value='MWI'> MALAWI</option><option  value='MYS'> MALAYSIA</option><option  value='MDV'> MALDIVES</option><option  value='MLI'> MALI</option><option  value='MLT'> MALTA</option><option  value='MHL'> MARSHALL ISLANDS</option><option  value='MTQ'> MARTINIQUE</option><option  value='MRT'> MAURITANIA</option><option  value='MUS'> MAURITIUS</option><option  value='MYT'> MAYOTTE</option><option  value='MEX'> MEXICO</option><option  value='FSM'> MICRONESIA, FEDERATED STATES OF</option><option  value='MDA'> MOLDOVA, REPUBLIC OF</option><option  value='MCO'> MONACO</option><option  value='MNG'> MONGOLIA</option><option  value='MNE'> MONTENEGRO</option><option  value='MSR'> MONTSERRAT</option><option  value='MAR'> MOROCCO</option><option  value='MOZ'> MOZAMBIQUE</option><option  value='MMR'> MYANMAR (BURMA)</option><option  value='NAM'> NAMIBIA</option><option  value='NRU'> NAURU</option><option  value='NPL'> NEPAL</option><option  value='NLD'> NETHERLANDS</option><option  value='ANT'> NETHERLANDS ANTILLES</option><option  value='NTZ'> NEUTRAL ZONE</option><option  value='NCL'> NEW CALEDONIA</option><option  value='NZL'> NEW ZEALAND</option><option  value='NIC'> NICARAGUA</option><option  value='NER'> NIGER</option><option  value='NGA'> NIGERIA</option><option  value='NIU'> NIUE</option><option  value='NFK'> NORFOLK ISLAND</option><option  value='MNP'> NORTHERN MARIANA ISLANDS</option><option  value='NOR'> NORWAY</option><option  value='OMN'> OMAN</option><option  value='PAK'> PAKISTAN</option><option  value='PLW'> PALAU</option><option  value='PSE'> PALESTINE</option><option  value='PAN'> PANAMA</option><option  value='PNG'> PAPUA NEW GUINEA</option><option  value='PRY'> PARAGUAY</option><option  value='XXX'> PERSON OF UNSPECIFIED NATIONALITY</option><option  value='PER'> PERU</option><option  value='PHL'> PHILIPPINES</option><option  value='PCN'> PITCAIRN</option><option  value='POL'> POLAND</option><option  value='PRT'> PORTUGAL</option><option  value='PRI'> PUERTO RICO</option><option  value='QAT'> QATAR</option><option  value='XXB'> REFUGEE</option><option  value='XXC'> REFUGEE (NON-CONVENTIONAL) OTHER THAN XXB</option><option  value='MKD'> REPUBLIC OF NORTH MACEDONIA</option><option  value='UNK'> RESIDENT OF KOSOVO (UNMIK)</option><option  value='REU'> REUNION ISLANDS</option><option  value='ROU'> ROMANIA</option><option  value='RUS'> RUSSIAN FEDERATION</option><option  value='RWA'> RWANDA</option><option  value='BLM'> SAINT BARTHELEMY</option><option  value='SHN'> SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option><option  value='KNA'> SAINT KITTS AND NEVIS</option><option  value='LCA'> SAINT LUCIA</option><option  value='SPM'> SAINT PIERRE AND MIQUELON</option><option  value='VCT'> SAINT VINCENT AND THE GRENADINES</option><option  value='WSM'> SAMOA</option><option  value='SMR'> SAN MARINO</option><option  value='STP'> SAO TOME AND PRINCIPE</option><option  value='SAU'> SAUDI ARABIA</option><option  value='SEN'> SENEGAL</option><option  value='SRB'> SERBIA</option><option  value='SYC'> SEYCHELLES</option><option  value='SLE'> SIERRA LEONE</option><option  value='SGP'> SINGAPORE</option><option  value='SVK'> SLOVAK REPUBLIC</option><option  value='SVN'> SLOVENIA</option><option  value='SLB'> SOLOMON ISLANDS</option><option  value='SOM'> SOMALIA</option><option  value='ZAF'> SOUTH AFRICA</option><option  value='SGS'> SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option><option  value='SSD'> SOUTH SUDAN</option><option  value='XOM'> SOVEREIGN MILITARY ORDER OF MALTA</option><option  value='ESP'> SPAIN</option><option  value='LKA'> SRI LANKA</option><option  value='XXA'> STATELESS PERSON</option><option  value='SDN'> SUDAN</option><option  value='SUR'> SURINAME</option><option  value='SJM'> SVALBARD AND JAN MAYEN ISLANDS</option><option  value='SWZ'> SWAZILAND</option><option  value='SWE'> SWEDEN</option><option  value='CHE'> SWITZERLAND</option><option  value='SYR'> SYRIA</option><option  value='TWN'> TAIWAN</option><option  value='TZA'> TANZANIA</option><option  value='TJK'> TAZIKISTAN</option><option  value='THA'> THAILAND</option><option  value='TBT'> TIBETAN ORIGIN</option><option  value='TGO'> TOGO</option><option  value='TKL'> TOKELAU</option><option  value='TON'> TONGA</option><option  value='TTO'> TRINIDAD AND TOBAGO </option><option  value='TUN'> TUNISIA</option><option  value='TUR'> TURKEY</option><option  value='TKM'> TURKMENISTAN</option><option  value='TCA'> TURKS AND CAICOS ISLANDS</option><option  value='TUV'> TUVALU</option><option  value='UGA'> UGANDA</option><option  value='GBD'> UK BRITISH DEPENDENT TERRITORIES CITIZEN</option><option  value='GBO'> UK BRITISH OVERSEAS CITIZEN</option><option  value='GBN'> UK BRITISH OVERSEAS NATIONAL </option><option  value='GBP'> UK BRITISH PROTECTED PERSON</option><option  value='GBS'> UK BRITISH SUBJECT</option><option  value='UKR'> UKRAINE</option><option  value='ARE'> UNITED ARAB EMIRATES</option><option  value='GBR'> UNITED KINGDOM</option><option  value='UNO'> UNITED NATIONS ORGANIZATION</option><option  value='UNA'> UNITED NATIONS SPECIALIZED AGENCY</option><option  value='UMI'> UNITED STATES MINOR OUTLYING ISLANDS</option><option  value='USA'> UNITED STATES OF AMERICA</option><option  value='URY'> URUGUAY</option><option  value='UZB'> UZBEKISTAN</option><option  value='VUT'> VANUATU (NEW HEBRIDES)</option><option  value='VEN'> VENEZUELA</option><option  value='VNM'> VIETNAM</option><option  value='VGB'> VIRGIN ISLANDS (BRITISH)</option><option  value='VIR'> VIRGIN ISLANDS (US)</option><option  value='WLF'> WALLIS AND FUTUNA ISLANDS</option><option  value='ESH'> WESTERN SAHARA</option><option  value='YEM'> YEMEN</option><option  value='YUG'> YUGOSLAVIA</option><option  value='ZMB'> ZAMBIA</option><option  value='ZWE'> ZIMBABWE</option>					
+                  </select>
+                </font>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+    
+            <tr bgcolor="#95CFFF" background="heading.gif"> 			
+              <td height="15" colspan="2" nowrap background="heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc. Details</font></strong></td>
+              <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
+            </tr>
+            
+            <tr>
+              <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
+              <td height="3" valign="middle" bgcolor="#FFFFFF" >
+                <input name="name" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="chkString(this);" onblur="trim1(this)" id="name" size="50" maxlength="50" value=""/>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Capacity <font color="red">*</font> <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <input name="capacity" type="text" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkInt(this)" onblur="trim1(this)" id="capacity" size="6" maxlength="6" value=""/>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+            
+            <tr>		
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Address <font color="red">*</font>   </td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                <font size="1">
+                <textarea name="address" id="address"  cols="40" class="fieldboxes" onblur="trim1(this)" onKeyUp="chkAddress(this);" ></textarea>
+                </font>
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+          
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">State <font color="red">*</font> </div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+                <select name="state" class="style16" id="state" onchange="showcities(this.value,'citydata','city_distr','true');showaccograde(this.value,'accotypedata','acco_type','true');" >
+                  <option  value="" selected="selected">Select</option>
+                  <option  value='1'> ANDAMAN AND NICOBAR ISLANDS</option><option  value='2'> ANDHRA PRADESH</option><option  value='3'> ARUNACHAL PRADESH</option><option  value='4'> ASSAM</option><option  value='5'> BIHAR</option><option  value='34'> CHANDIGARH</option><option  value='6'> CHHATTISGARH</option><option  value='35'> DADRA AND NAGAR HAVELI</option><option  value='7'> DAMAN AND DIU</option><option  value='8'> DELHI</option><option  value='9'> GOA</option><option  value='10'> GUJARAT</option><option  value='11'> HARYANA</option><option  value='12'> HIMACHAL PRADESH</option><option  value='13'> JAMMU AND KASHMIR</option><option  value='14'> JHARKHAND</option><option  value='15'> KARNATAKA</option><option  value='16'> KERALA</option><option  value='38'> LADAKH</option><option  value='36'> LAKSHADWEEP</option><option  value='17'> MADHYA PRADESH</option><option  value='18'> MAHARASHTRA</option><option  value='19'> MANIPUR</option><option  value='20'> MEGHALAYA</option><option  value='21'> MIZORAM</option><option  value='22'> NAGALAND</option><option  value='23'> ODISHA</option><option  value='24'> PUDUCHERRY</option><option  value='25'> PUNJAB</option><option  value='26'> RAJASTHAN</option><option  value='27'> SIKKIM</option><option  value='28'> TAMIL NADU</option><option  value='37'> TELANGANA</option><option  value='29'> TRIPURA</option><option  value='31'> UTTARAKHAND</option><option  value='30'> UTTAR PRADESH</option><option  value='32'> WEST BENGAL</option>
+                </select>
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">City/District <font color="red">*</font> </div>								
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+              <div id="citydata">
+                <select name="city_distr" class="style16" id="city_distr">
+                  <option  value="" selected="selected">Select</option>
+                  <!-- sec -->
+                  
+                  
+                  <!-- end -->									           
+                </select>
+              </div>     
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+            </tr>
+            
+            <tr id="frroblock">
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">FRRO Description<font color="red">*</font> </div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+              <div id="frrodatadiv">
+                <select name="u_frrodesc" class="style16" id="u_frrodesc"  >
+                  <option  value="" selected="selected">Select</option>
+                  
+                </select>
+                </div>
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">Accomodation Type <font color="red">*</font> </div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+              <div id=accotypedata>
+                <select name="acco_type" class="style16" id="acco_type"  onchange="setaccomgrade()">
+                  <option  value="" selected="selected">Select</option>
+                   <option  value='BB'> Bed and Breakfast</option><option  value='D'> Dharmshala</option><option  value='GH'> Guest House</option><option  value='HP'> Hospital</option><option  value='H'> Hotel</option><option  value='IH'> Individual House</option><option  value='I'> Institute</option><option  value='O'> Others</option><option  value='S'> Service Apartment </option> 
+                </select>
+                </div>
+              </td>						 
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                <div align="right">Accomodation Grade <font color="red">*</font> </div>
+              </td>
+              <td height="11" valign="middle" bgcolor="#FFFFFF">
+              <div id=accom_grade_id>
+                <select name="star_rat" class="style16" id="star_rat">
+                  <option  value="" selected="selected">Select</option>                
+                  <option  value='1s'> One Star</option><option  value='2s'> Two Star</option><option  value='3s'> Three Star</option><option  value='4s'> Four Star</option><option  value='5s'> Five Star</option><option  value='6s'> Others</option>	 
+                </select>
+              </div>
+              </td>
+              <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID : <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            <!--	<input name="email" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" onblur="trim1(this)" id="email" size="20" maxlength="50" value="<!%= accom.getEmail() %>"/>		-->
+                <input name="email" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onblur="ValidateEmail(this),trim1(this)" id="email" size="20" maxlength="50" value="" />		
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+            
+            <tr>
+              <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile : <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+          <!-- 		<input name="mcontact" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkInt(this)" id="mcontact" size="20" maxlength="15" value="<!%= accom.getMcontact() %>"/>	 -->
+                <input name="mcontact" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkPhone(this)" onblur="trim1(this)" id="mcontact" size="20" maxlength="15" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory </td>
+            </tr>
+            
+            
+            <tr>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number : <br></td>
+              <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+          <!--  		<input name="contact" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" onKeyUp="chkInt(this)" id="contact" size="20" maxlength="15" value="<!%= accom.getContact() %>"/>	-->
+                <input name="contact" type="text" AUTOCOMPLETE=OFF 	class="fieldboxes" 	onKeyUp="chkPhone(this)" onblur="trim1(this)" id="contact" size="20" maxlength="15" value="" />
+              </td>
+              <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+            </tr>
+            
+            
+            <tr bgcolor="#95CFFF" background="image/heading.gif">
+              <td height="15" colspan="3" nowrap background="image/heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc.&nbsp; </font></strong><strong><font color="#ffffff"> Owner's Details </font></strong></td>							
+            </tr>
+    
+            <tr>
+              <td colspan = "3">
+              <div id="owners">
+              
+              </div>
+              <table width="100%" border="0" align="center">
+                <tr>
+                  <td>Name <font color="red">*</font></td>
+                  <td>Address <font color="red">*</font></td>
+                  <td>State <font color="red">*</font></td>
+                  <td>City/Dist. <font color="red">*</font></td>
+                  <td>Email-ID</td>
+                  <td>Phone No.</td>
+                  <td>Mobile</td>
+                  <td></td>
+                </tr> 
+                <tr>
+                  <td><input type="text" maxlength="50" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkString(this);" onblur="trim1(this)" name="name_o" value=""></td>
+                  <td><input type="text" maxlength="150" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkAddress(this);" onblur="trim1(this)" name="address_o" value=""></td>
+                  <td>
+                    <select name="state_o" class="style16" id="state_o" onchange="showcities1(this.value,'citydata1','citydistr_o','false');"> 
+                      <option value="" selected="selected">Select</option>
+                      <option  value='1'> ANDAMAN AND NICOBAR ISLANDS</option><option  value='2'> ANDHRA PRADESH</option><option  value='3'> ARUNACHAL PRADESH</option><option  value='4'> ASSAM</option><option  value='5'> BIHAR</option><option  value='34'> CHANDIGARH</option><option  value='6'> CHHATTISGARH</option><option  value='35'> DADRA AND NAGAR HAVELI</option><option  value='7'> DAMAN AND DIU</option><option  value='8'> DELHI</option><option  value='9'> GOA</option><option  value='10'> GUJARAT</option><option  value='11'> HARYANA</option><option  value='12'> HIMACHAL PRADESH</option><option  value='13'> JAMMU AND KASHMIR</option><option  value='14'> JHARKHAND</option><option  value='15'> KARNATAKA</option><option  value='16'> KERALA</option><option  value='38'> LADAKH</option><option  value='36'> LAKSHADWEEP</option><option  value='17'> MADHYA PRADESH</option><option  value='18'> MAHARASHTRA</option><option  value='19'> MANIPUR</option><option  value='20'> MEGHALAYA</option><option  value='21'> MIZORAM</option><option  value='22'> NAGALAND</option><option  value='23'> ODISHA</option><option  value='24'> PUDUCHERRY</option><option  value='25'> PUNJAB</option><option  value='26'> RAJASTHAN</option><option  value='27'> SIKKIM</option><option  value='28'> TAMIL NADU</option><option  value='37'> TELANGANA</option><option  value='29'> TRIPURA</option><option  value='31'> UTTARAKHAND</option><option  value='30'> UTTAR PRADESH</option><option  value='32'> WEST BENGAL</option> 
+                    </select>
+                  </td>
+                  <td>
+                  <div id ='citydata1'>
+                    <select name="citydistr_o" class="style16" id="citydistr_o1"> 
+                      <option value="" selected="selected">Select</option>                 
+                     </select>
+                  </div>
+                  </td>
+                  <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="emailid_o" onblur="trim1(this)" maxlength="50" value=""></td>
+                  <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="phoneno_o" maxlength="15" onKeyUp="chkPhone(this)" onblur="trim1(this)" value="" size="10" ></td>
+                  <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="mobile_o" maxlength="15" onKeyUp="chkPhone(this)" onblur="trim1(this)" value="" size="10" ></td>
+                  <td>&nbsp; &nbsp;&nbsp;<br></td>
+                </tr>
+                
+                <tr>								
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>								
+                  <td  height="3"  valign="top" colspan=2 nowrap bgcolor="#F3F3F3" class="text style38"><font color=""> &nbsp;<font size="">Minimum One contact number is Mandatory</font></font> </td>
+                </tr>															    		
+              </table>
+              
+              <table  align=right>
+                <tr>
+                  <td><br></td>
+                  <td><input type="button" onclick="addInput()" name="add" value="Add" /></td>
+                  <td><input type="button" onclick="delowners()" name="add" value="Delete" /></td>
+                </tr>
+              </table>	
+              </td>
+             </tr>
+         
+            <tr>
+                <td colspan=5>&nbsp;
+                  <img id="capt" name="capt" src="captcha.jsp" style="height:35px;width:150px;" align="middle" >
+                  <img align="middle" src="loadingzoho.gif" alt="Refresh Image" title='Refresh Image' width="23px" height="23px" onclick="refreshCaptcha();" ></img>
+                </td>
+            </tr>
+            
+             <tr>
+                <td colspan=5>
+                  Type the code shown above: &nbsp; <input name="captchaval" type="text" id="captchaval" size="25" maxlength="6" AUTOCOMPLETE=OFF > 
                 </td>
               </tr>
-            </table>
-                </td>			
-        </tr>	
-        
-        <tr bgcolor="#95CFFF" background="image/heading.gif" align='right'>
-          <td height="15" colspan="8" nowrap background="image/heading.gif" class="style38" >
-            <strong>
-              <a style="text-decoration: none;" href = "menuuserreg.jsp" ><font color="#ffffff">Back</font></a>&nbsp;&nbsp;
-              <a style="text-decoration: none" href = "login.jsp" ><font color="#ffffff">Login</font></a>&nbsp;
-            </strong>
-          </td>				
-        </tr>
+              
+                
+            <tr align=center>
+              <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" colspan=3 align="center">
+            <!--  	<input type=button onClick="subm();" value=Submit name="submitb">	-->  
+                <input type=button onClick="subm(0);" value=Submit name="submitb">
+                <input type=button onClick="showd()" value="Reset"> 
+                <br>
+              </td>
+            </tr>	
+              
+            <tr>
+              <td>
+               Fields marked <font color="red">*</font> are Mandatory
+              </td>
+            </tr>
             
-        <tr>
-          <td width="100%" valign="top">
-            <form name="Registration" method="post" action="" htmlEscape="true">
-              <table width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFDBAE" bgcolor="#FFFFFF">
-                <input type="hidden" size="25" maxlength="25" AUTOCOMPLETE=OFF name="t4g" value="15361Q01"  />		
-                <tr bgcolor="#95CFFF" background="image/heading.gif">
-                  <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Individual Registration&nbsp;</font></strong></td>
-                  <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Help&nbsp;</font></strong></td>
-                </tr>					
-              
-                <tr>
-                  <td id="usid" height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">User ID <font color="red">* </font><br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <input AUTOCOMPLETE=OFF  name="u_id" type="text" class="fieldboxes" id="u_id" size="20" maxlength="20" value="" onKeyUp="chkStringuserids(this);" onBlur='CheckUser(this.value)' /><div id='useralert'></div>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">User ID is case sensitive, minimum one alphabetic character and minimum one numeric character<br> </td>
+            <tr><td><br><br></td></tr>	
+            
+            <tr align=right>
+              <td colspan="6" height="100%">
+              <table  width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                <tr bgcolor="#95CFFF" background="image/heading.gif" align='right'>
+                  <td height="15" align="left" colspan="2" nowrap background="image/heading.gif" class="style38"><font color="white" > <strong>Best Viewed in Internet Explorer 6+ / chrome 20+ / Firefox 4+</strong></font></td>
+                  <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38"><font color="#ffffff"><strong>Designed and Developed by : </strong></font><font color="#ffffff"><strong>National Informatics Centre</strong><br></font></td>
                 </tr>
-                
-              
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Password <font color="red">*</font>  </td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                      <input AUTOCOMPLETE=OFF  name="u_pwd" class="fieldboxes" type="password" id="u_pwd" size="50" maxlength="50" value=""/>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38"> min 8 chars,use at least one special character <br>(/ . [~ ! @ ' # $ % ^ & * ? _ ~ - , () ] + / )! "),number,lowercase,<br>uppercase letter <br></td>
-                </tr>
-                
-              
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Confirm Password <font color="red">*</font>  </td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                      <input AUTOCOMPLETE=OFF  name="u_repwd" class="fieldboxes" type="password" onKeyUp=""  id="u_repwd" size="50" maxlength="50" value=""/>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
-                </tr>
-                
-                
-                <tr bgcolor="#95CFFF" background="image/heading.gif">
-                  <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38" >
-                    <strong><font color="#ffffff">If you forget your password we will identify you with this information<br></font></strong>
-                  </td>
-                  <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
-                </tr>
-              
-                <tr>		
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Security Question <font color="red">*</font>  </td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <font size="1">
-                      <select name="u_secques" class="style16" id="u_secques">
-                        <option value="">Select</option>
-                        <option  value='2'> What is the name of the hospital where you were born?</option><option  value='4'> What is the name of the street where you grew up?</option><option  value='3'> What is the name of your favorite book?</option><option  value='1'> What is your favorite author?</option><option  value='5'> where did you meet your spouse?</option>
-                      </select>
-                    </font>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;In case you forget password, we will identify <br>you by this<br></td>
-                </tr>
-                
-        
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Your Answer <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                <!--  	<input name="u_secans" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkStringuserids(this);" type="text"  id="u_secans" size="50" maxlength="150" value="<!%= usr.getU_secans() %>"/>	-->
-                    <input name="u_secans" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkAlphaNumSp(this);" onblur="trim1(this)" type="text" id="u_secans" size="50" maxlength="150" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-              <!--  		<input name="u_name" AUTOCOMPLETE=OFF class="fieldboxes" type="text" onKeyUp="chkString(this);"  onKeyUp="" id="u_name" size="50" maxlength="50" value="<!%= usr.getU_name() %>"/>	-->
-                    <input name="u_name" AUTOCOMPLETE=OFF class="fieldboxes" type="text" onKeyUp="chkString(this);" onblur="trim1(this)" id="u_name" size="50" maxlength="50" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">Gender <font color="red">*</font>&nbsp; </div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF" class="style16">
-                    <font size="3">
-                      <select name="u_gender" class="style16" id="u_gender">
-                        <option value="">Select</option>
-                        <option  value='M'> Male</option><option  value='F'> Female</option><option  value='X'> Transgender</option>							
-                      </select>
-                    </font>
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="helpText">&nbsp;</td>
-                </tr>
-                
-        
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">Date of Birth <font color="red">*</font> <br></div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                    <input type="text" class="fieldboxes" AUTOCOMPLETE=OFF   name="u_dob" id="u_dob" maxlength="10" onKeyUp="chkDatechars(this);" size="20" datepicker="true" datepicker_min="01/01/1900" datepicker_max="13/10/2023" value="" >
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Designation <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <input name="u_designation" type="text" AUTOCOMPLETE=OFF  onKeyUp="chkString(this);" onblur="trim1(this)" class="fieldboxes"  id="u_designation" size="20" maxlength="50" value=""/>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                <!--  	<input name="u_emailid" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" id="u_emailid" size="20" maxlength="50" value="<!%= usr.getU_emailid() %>"/>	-->
-                    <input name="u_emailid" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onblur="ValidateEmail(this); trim1(this)" id="u_emailid" size="20" maxlength="50" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;For Correspondence, New Password<br> </td>
-                </tr>
-                
-        
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                <!--  	<input name="u_mobile" type="text" AUTOCOMPLETE=OFF onKeyUp="chkInt(this)" class="fieldboxes"  onKeyUp="" id="u_mobile" size="20" maxlength="15" value="<!%= usr.getU_mobile() %>"/>	-->
-                    <input name="u_mobile" type="text" AUTOCOMPLETE=OFF onKeyUp="chkPhone(this)" onblur="trim1(this)" class="fieldboxes" id="u_mobile" size="20" maxlength="15" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory<br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                <!--  	<input name="u_phone" type="text" AUTOCOMPLETE=OFF   class="fieldboxes" onKeyUp="chkInt(this)" onKeyUp="" id="u_phone" size="20" maxlength="15" value="<!%= usr.getU_phone() %>"/>	-->
-                    <input name="u_phone" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkPhone(this)" onblur="trim1(this)" id="u_phone" size="20" maxlength="15" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-        
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Nationality <font color="red">*</font></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <font size="1">
-                      <select name="u_nationality" id="u_nationality" class="style16" id="">
-                        <option value="IND">INDIA</option>				
-                        <option  value='AFG'> AFGHANISTAN</option><option  value='ALA'> ALAND ISLANDS</option><option  value='ALB'> ALBANIA</option><option  value='DZA'> ALGERIA</option><option  value='ASM'> AMERICAN SAMOA</option><option  value='AND'> ANDORRA</option><option  value='AGO'> ANGOLA</option><option  value='AIA'> ANGUILLA</option><option  value='ATA'> ANTARCTICA</option><option  value='ATG'> ANTIGUA AND BARBUDA</option><option  value='ARG'> ARGENTINA</option><option  value='ARM'> ARMENIA</option><option  value='ABW'> ARUBA</option><option  value='AUS'> AUSTRALIA</option><option  value='AUT'> AUSTRIA</option><option  value='AZE'> AZERBAIJAN</option><option  value='BHS'> BAHAMAS</option><option  value='BHR'> BAHRAIN</option><option  value='BGD'> BANGLADESH</option><option  value='BRB'> BARBADOS</option><option  value='BLR'> BELARUS</option><option  value='BEL'> BELGIUM</option><option  value='BLZ'> BELIZE</option><option  value='BEN'> BENIN (DAHOMEY)</option><option  value='BMU'> BERMUDA</option><option  value='BTN'> BHUTAN</option><option  value='BOL'> BOLIVIA</option><option  value='BIH'> BOSNIA AND HERZEGOVINA</option><option  value='BWA'> BOTSWANA</option><option  value='BVT'> BOUVET ISLAND</option><option  value='BRA'> BRAZIL</option><option  value='IOT'> BRITISH INDIAN OCEAN TERRITORY</option><option  value='BRN'> BRUNEI DARUSSALAM</option><option  value='BGR'> BULGARIA</option><option  value='BFA'> BURKINA FASO ( UPPER VOLTA)</option><option  value='BDI'> BURUNDI</option><option  value='KHM'> CAMBODIA (KAMPUCHEA)</option><option  value='CMR'> CAMEROON</option><option  value='CAN'> CANADA</option><option  value='CPV'> CAPE VERDE ISLANDS</option><option  value='XCC'> CARRIBEAN COMMUNITY</option><option  value='CYM'> CAYMAN ISLANDS</option><option  value='CAF'> CENTRAL AFRICAN REPUBLIC</option><option  value='TCD'> CHAD</option><option  value='CHL'> CHILE</option><option  value='CHN'> CHINA</option><option  value='CXR'> CHRISTMAS ISLANDS</option><option  value='CCK'> COCOS (KEELING) ISLANDS</option><option  value='COL'> COLOMBIA</option><option  value='COM'> COMOROS</option><option  value='COG'> CONGO</option><option  value='COD'> CONGO, DEMOCRATIC REPUBLIC OF THE (ZAIRE)</option><option  value='COK'> COOK ISLANDS</option><option  value='CRI'> COSTA RICA</option><option  value='CIV'> COTE DIVOIRE</option><option  value='HRV'> CROATIA -REPUBLIC OF CROATIA</option><option  value='CUB'> CUBA</option><option  value='CYP'> CYPRUS</option><option  value='CZE'> CZECH REPUBLIC</option><option  value='DNK'> DENMARK</option><option  value='DJI'> DJIBOUTI</option><option  value='DMA'> DOMINICA</option><option  value='DOM'> DOMINICAN REPUBLIC</option><option  value='TLS'> EAST TIMOR, DEMOCRATIC REPUBLIC OF</option><option  value='ECU'> ECUADOR</option><option  value='EGY'> EGYPT</option><option  value='SLV'> EL SALVADOR</option><option  value='GNQ'> EQUITORIAL GUINEA</option><option  value='ERI'> ERITREA</option><option  value='EST'> ESTONIA</option><option  value='ETH'> ETHIOPIA</option><option  value='FLK'> FALKLAND ISLANDS (MALVINAS)</option><option  value='FRO'> FAROE ISLANDS</option><option  value='FJI'> FIJI</option><option  value='FIN'> FINLAND</option><option  value='FRA'> FRANCE</option><option  value='FXX'> FRANCE METROPOLITAN</option><option  value='GUF'> FRENCH GUIANA</option><option  value='ATF'> FRENCH SOUTHERN TERRITORIES</option><option  value='GAB'> GABON</option><option  value='GMB'> GAMBIA</option><option  value='GEO'> GEORGIA</option><option  value='DEU'> GERMANY</option><option  value='GHA'> GHANA</option><option  value='GIB'> GIBRALTAR</option><option  value='GRC'> GREECE</option><option  value='GRL'> GREENLAND</option><option  value='GRD'> GRENADA</option><option  value='GLP'> GUADELOUPE</option><option  value='GUM'> GUAM</option><option  value='GTM'> GUATEMALA</option><option  value='GGY'> GUERNSEY</option><option  value='GIN'> GUINEA</option><option  value='GNB'> GUINEA BISSAU</option><option  value='GUY'> GUYANA</option><option  value='HTI'> HAITI</option><option  value='HMD'> HEARD AND MCDONALD ISLANDS</option><option  value='VAT'> HOLY SEE (VATICAN CITY STATE)</option><option  value='HND'> HONDURAS</option><option  value='HKG'> HONG KONG</option><option  value='HUN'> HUNGARY</option><option  value='ISL'> ICELAND</option><option  value='IND'> INDIA</option><option  value='IDN'> INDONESIA</option><option  value='IRN'> IRAN</option><option  value='IRQ'> IRAQ</option><option  value='IRL'> IRELAND</option><option  value='IMN'> ISLE OF MAN</option><option  value='ISR'> ISRAEL</option><option  value='ITA'> ITALY</option><option  value='JAM'> JAMAICA</option><option  value='JPN'> JAPAN</option><option  value='JEY'> JERSEY</option><option  value='JOR'> JORDAN</option><option  value='KAZ'> KAZAKHSTAN</option><option  value='KEN'> KENYA</option><option  value='KIR'> KIRIBATI</option><option  value='PRK'> KOREA, DEMOCRATIC PEOPLES REPUBLIC OF</option><option  value='KOR'> KOREA, REPUBLIC OF</option><option  value='KWT'> KUWAIT</option><option  value='KGZ'> KYRGYZSTAN</option><option  value='LAO'> LAOS</option><option  value='LVA'> LATVIA</option><option  value='LBN'> LEBANON</option><option  value='LSO'> LESOTHO</option><option  value='LBR'> LIBERIA</option><option  value='LBY'> LIBYA</option><option  value='LIE'> LIECHTENSTEIN</option><option  value='LTU'> LITHUANIA</option><option  value='LUX'> LUXEMBOURG</option><option  value='MAC'> MACAU</option><option  value='MDG'> MADAGASCAR</option><option  value='MWI'> MALAWI</option><option  value='MYS'> MALAYSIA</option><option  value='MDV'> MALDIVES</option><option  value='MLI'> MALI</option><option  value='MLT'> MALTA</option><option  value='MHL'> MARSHALL ISLANDS</option><option  value='MTQ'> MARTINIQUE</option><option  value='MRT'> MAURITANIA</option><option  value='MUS'> MAURITIUS</option><option  value='MYT'> MAYOTTE</option><option  value='MEX'> MEXICO</option><option  value='FSM'> MICRONESIA, FEDERATED STATES OF</option><option  value='MDA'> MOLDOVA, REPUBLIC OF</option><option  value='MCO'> MONACO</option><option  value='MNG'> MONGOLIA</option><option  value='MNE'> MONTENEGRO</option><option  value='MSR'> MONTSERRAT</option><option  value='MAR'> MOROCCO</option><option  value='MOZ'> MOZAMBIQUE</option><option  value='MMR'> MYANMAR (BURMA)</option><option  value='NAM'> NAMIBIA</option><option  value='NRU'> NAURU</option><option  value='NPL'> NEPAL</option><option  value='NLD'> NETHERLANDS</option><option  value='ANT'> NETHERLANDS ANTILLES</option><option  value='NTZ'> NEUTRAL ZONE</option><option  value='NCL'> NEW CALEDONIA</option><option  value='NZL'> NEW ZEALAND</option><option  value='NIC'> NICARAGUA</option><option  value='NER'> NIGER</option><option  value='NGA'> NIGERIA</option><option  value='NIU'> NIUE</option><option  value='NFK'> NORFOLK ISLAND</option><option  value='MNP'> NORTHERN MARIANA ISLANDS</option><option  value='NOR'> NORWAY</option><option  value='OMN'> OMAN</option><option  value='PAK'> PAKISTAN</option><option  value='PLW'> PALAU</option><option  value='PSE'> PALESTINE</option><option  value='PAN'> PANAMA</option><option  value='PNG'> PAPUA NEW GUINEA</option><option  value='PRY'> PARAGUAY</option><option  value='XXX'> PERSON OF UNSPECIFIED NATIONALITY</option><option  value='PER'> PERU</option><option  value='PHL'> PHILIPPINES</option><option  value='PCN'> PITCAIRN</option><option  value='POL'> POLAND</option><option  value='PRT'> PORTUGAL</option><option  value='PRI'> PUERTO RICO</option><option  value='QAT'> QATAR</option><option  value='XXB'> REFUGEE</option><option  value='XXC'> REFUGEE (NON-CONVENTIONAL) OTHER THAN XXB</option><option  value='MKD'> REPUBLIC OF NORTH MACEDONIA</option><option  value='UNK'> RESIDENT OF KOSOVO (UNMIK)</option><option  value='REU'> REUNION ISLANDS</option><option  value='ROU'> ROMANIA</option><option  value='RUS'> RUSSIAN FEDERATION</option><option  value='RWA'> RWANDA</option><option  value='BLM'> SAINT BARTHELEMY</option><option  value='SHN'> SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option><option  value='KNA'> SAINT KITTS AND NEVIS</option><option  value='LCA'> SAINT LUCIA</option><option  value='SPM'> SAINT PIERRE AND MIQUELON</option><option  value='VCT'> SAINT VINCENT AND THE GRENADINES</option><option  value='WSM'> SAMOA</option><option  value='SMR'> SAN MARINO</option><option  value='STP'> SAO TOME AND PRINCIPE</option><option  value='SAU'> SAUDI ARABIA</option><option  value='SEN'> SENEGAL</option><option  value='SRB'> SERBIA</option><option  value='SYC'> SEYCHELLES</option><option  value='SLE'> SIERRA LEONE</option><option  value='SGP'> SINGAPORE</option><option  value='SVK'> SLOVAK REPUBLIC</option><option  value='SVN'> SLOVENIA</option><option  value='SLB'> SOLOMON ISLANDS</option><option  value='SOM'> SOMALIA</option><option  value='ZAF'> SOUTH AFRICA</option><option  value='SGS'> SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option><option  value='SSD'> SOUTH SUDAN</option><option  value='XOM'> SOVEREIGN MILITARY ORDER OF MALTA</option><option  value='ESP'> SPAIN</option><option  value='LKA'> SRI LANKA</option><option  value='XXA'> STATELESS PERSON</option><option  value='SDN'> SUDAN</option><option  value='SUR'> SURINAME</option><option  value='SJM'> SVALBARD AND JAN MAYEN ISLANDS</option><option  value='SWZ'> SWAZILAND</option><option  value='SWE'> SWEDEN</option><option  value='CHE'> SWITZERLAND</option><option  value='SYR'> SYRIA</option><option  value='TWN'> TAIWAN</option><option  value='TZA'> TANZANIA</option><option  value='TJK'> TAZIKISTAN</option><option  value='THA'> THAILAND</option><option  value='TBT'> TIBETAN ORIGIN</option><option  value='TGO'> TOGO</option><option  value='TKL'> TOKELAU</option><option  value='TON'> TONGA</option><option  value='TTO'> TRINIDAD AND TOBAGO </option><option  value='TUN'> TUNISIA</option><option  value='TUR'> TURKEY</option><option  value='TKM'> TURKMENISTAN</option><option  value='TCA'> TURKS AND CAICOS ISLANDS</option><option  value='TUV'> TUVALU</option><option  value='UGA'> UGANDA</option><option  value='GBD'> UK BRITISH DEPENDENT TERRITORIES CITIZEN</option><option  value='GBO'> UK BRITISH OVERSEAS CITIZEN</option><option  value='GBN'> UK BRITISH OVERSEAS NATIONAL </option><option  value='GBP'> UK BRITISH PROTECTED PERSON</option><option  value='GBS'> UK BRITISH SUBJECT</option><option  value='UKR'> UKRAINE</option><option  value='ARE'> UNITED ARAB EMIRATES</option><option  value='GBR'> UNITED KINGDOM</option><option  value='UNO'> UNITED NATIONS ORGANIZATION</option><option  value='UNA'> UNITED NATIONS SPECIALIZED AGENCY</option><option  value='UMI'> UNITED STATES MINOR OUTLYING ISLANDS</option><option  value='USA'> UNITED STATES OF AMERICA</option><option  value='URY'> URUGUAY</option><option  value='UZB'> UZBEKISTAN</option><option  value='VUT'> VANUATU (NEW HEBRIDES)</option><option  value='VEN'> VENEZUELA</option><option  value='VNM'> VIETNAM</option><option  value='VGB'> VIRGIN ISLANDS (BRITISH)</option><option  value='VIR'> VIRGIN ISLANDS (US)</option><option  value='WLF'> WALLIS AND FUTUNA ISLANDS</option><option  value='ESH'> WESTERN SAHARA</option><option  value='YEM'> YEMEN</option><option  value='YUG'> YUGOSLAVIA</option><option  value='ZMB'> ZAMBIA</option><option  value='ZWE'> ZIMBABWE</option>					
-                      </select>
-                    </font>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-        
-                <tr bgcolor="#95CFFF" background="heading.gif"> 			
-                  <td height="15" colspan="2" nowrap background="heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc. Details</font></strong></td>
-                  <td height="15" colspan="1" nowrap background="image/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
-                </tr>
-                
-                <tr>
-                  <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
-                  <td height="3" valign="middle" bgcolor="#FFFFFF" >
-                    <input name="name" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="chkString(this);" onblur="trim1(this)" id="name" size="50" maxlength="50" value=""/>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Capacity <font color="red">*</font> <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <input name="capacity" type="text" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkInt(this)" onblur="trim1(this)" id="capacity" size="6" maxlength="6" value=""/>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-                
-                <tr>		
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Address <font color="red">*</font>   </td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                    <font size="1">
-                    <textarea name="address" id="address"  cols="40" class="fieldboxes" onblur="trim1(this)" onKeyUp="chkAddress(this);" ></textarea>
-                    </font>
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-              
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">State <font color="red">*</font> </div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                    <select name="state" class="style16" id="state" onchange="showcities(this.value,'citydata','city_distr','true');showaccograde(this.value,'accotypedata','acco_type','true');" >
-                      <option  value="" selected="selected">Select</option>
-                      <option  value='1'> ANDAMAN AND NICOBAR ISLANDS</option><option  value='2'> ANDHRA PRADESH</option><option  value='3'> ARUNACHAL PRADESH</option><option  value='4'> ASSAM</option><option  value='5'> BIHAR</option><option  value='34'> CHANDIGARH</option><option  value='6'> CHHATTISGARH</option><option  value='35'> DADRA AND NAGAR HAVELI</option><option  value='7'> DAMAN AND DIU</option><option  value='8'> DELHI</option><option  value='9'> GOA</option><option  value='10'> GUJARAT</option><option  value='11'> HARYANA</option><option  value='12'> HIMACHAL PRADESH</option><option  value='13'> JAMMU AND KASHMIR</option><option  value='14'> JHARKHAND</option><option  value='15'> KARNATAKA</option><option  value='16'> KERALA</option><option  value='38'> LADAKH</option><option  value='36'> LAKSHADWEEP</option><option  value='17'> MADHYA PRADESH</option><option  value='18'> MAHARASHTRA</option><option  value='19'> MANIPUR</option><option  value='20'> MEGHALAYA</option><option  value='21'> MIZORAM</option><option  value='22'> NAGALAND</option><option  value='23'> ODISHA</option><option  value='24'> PUDUCHERRY</option><option  value='25'> PUNJAB</option><option  value='26'> RAJASTHAN</option><option  value='27'> SIKKIM</option><option  value='28'> TAMIL NADU</option><option  value='37'> TELANGANA</option><option  value='29'> TRIPURA</option><option  value='31'> UTTARAKHAND</option><option  value='30'> UTTAR PRADESH</option><option  value='32'> WEST BENGAL</option>
-                    </select>
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">City/District <font color="red">*</font> </div>								
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                  <div id="citydata">
-                    <select name="city_distr" class="style16" id="city_distr">
-                      <option  value="" selected="selected">Select</option>
-                      <!-- sec -->
-                      
-                      
-                      <!-- end -->									           
-                    </select>
-                  </div>     
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
-                </tr>
-                
-                <tr id="frroblock">
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">FRRO Description<font color="red">*</font> </div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                  <div id="frrodatadiv">
-                    <select name="u_frrodesc" class="style16" id="u_frrodesc"  >
-                      <option  value="" selected="selected">Select</option>
-                      
-                    </select>
-                    </div>
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">Accomodation Type <font color="red">*</font> </div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                  <div id=accotypedata>
-                    <select name="acco_type" class="style16" id="acco_type"  onchange="setaccomgrade()">
-                      <option  value="" selected="selected">Select</option>
-                       <option  value='BB'> Bed and Breakfast</option><option  value='D'> Dharmshala</option><option  value='GH'> Guest House</option><option  value='HP'> Hospital</option><option  value='H'> Hotel</option><option  value='IH'> Individual House</option><option  value='I'> Institute</option><option  value='O'> Others</option><option  value='S'> Service Apartment </option> 
-                    </select>
-                    </div>
-                  </td>						 
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
-                    <div align="right">Accomodation Grade <font color="red">*</font> </div>
-                  </td>
-                  <td height="11" valign="middle" bgcolor="#FFFFFF">
-                  <div id=accom_grade_id>
-                    <select name="star_rat" class="style16" id="star_rat">
-                      <option  value="" selected="selected">Select</option>                
-                      <option  value='1s'> One Star</option><option  value='2s'> Two Star</option><option  value='3s'> Three Star</option><option  value='4s'> Four Star</option><option  value='5s'> Five Star</option><option  value='6s'> Others</option>	 
-                    </select>
-                  </div>
-                  </td>
-                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID : <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-                <!--	<input name="email" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" onblur="trim1(this)" id="email" size="20" maxlength="50" value="<!%= accom.getEmail() %>"/>		-->
-                    <input name="email" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onblur="ValidateEmail(this),trim1(this)" id="email" size="20" maxlength="50" value="" />		
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-                
-                <tr>
-                  <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile : <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-              <!-- 		<input name="mcontact" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkInt(this)" id="mcontact" size="20" maxlength="15" value="<!%= accom.getMcontact() %>"/>	 -->
-                    <input name="mcontact" type="text" AUTOCOMPLETE=OFF class="fieldboxes" onKeyUp="chkPhone(this)" onblur="trim1(this)" id="mcontact" size="20" maxlength="15" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory </td>
-                </tr>
-                
-                
-                <tr>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number : <br></td>
-                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
-              <!--  		<input name="contact" type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  onKeyUp="" onKeyUp="chkInt(this)" id="contact" size="20" maxlength="15" value="<!%= accom.getContact() %>"/>	-->
-                    <input name="contact" type="text" AUTOCOMPLETE=OFF 	class="fieldboxes" 	onKeyUp="chkPhone(this)" onblur="trim1(this)" id="contact" size="20" maxlength="15" value="" />
-                  </td>
-                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
-                </tr>
-                
-                
-                <tr bgcolor="#95CFFF" background="image/heading.gif">
-                  <td height="15" colspan="3" nowrap background="image/heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc.&nbsp; </font></strong><strong><font color="#ffffff"> Owner's Details </font></strong></td>							
-                </tr>
-        
-                <tr>
-                  <td colspan = "3">
-                  <div id="owners">
-                  
-                  </div>
-                  <table width="100%" border="0" align="center">
-                    <tr>
-                      <td>Name <font color="red">*</font></td>
-                      <td>Address <font color="red">*</font></td>
-                      <td>State <font color="red">*</font></td>
-                      <td>City/Dist. <font color="red">*</font></td>
-                      <td>Email-ID</td>
-                      <td>Phone No.</td>
-                      <td>Mobile</td>
-                      <td></td>
-                    </tr> 
-                    <tr>
-                      <td><input type="text" maxlength="50" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkString(this);" onblur="trim1(this)" name="name_o" value=""></td>
-                      <td><input type="text" maxlength="150" AUTOCOMPLETE=OFF  class="fieldboxes" onKeyUp="chkAddress(this);" onblur="trim1(this)" name="address_o" value=""></td>
-                      <td>
-                        <select name="state_o" class="style16" id="state_o" onchange="showcities1(this.value,'citydata1','citydistr_o','false');"> 
-                          <option value="" selected="selected">Select</option>
-                          <option  value='1'> ANDAMAN AND NICOBAR ISLANDS</option><option  value='2'> ANDHRA PRADESH</option><option  value='3'> ARUNACHAL PRADESH</option><option  value='4'> ASSAM</option><option  value='5'> BIHAR</option><option  value='34'> CHANDIGARH</option><option  value='6'> CHHATTISGARH</option><option  value='35'> DADRA AND NAGAR HAVELI</option><option  value='7'> DAMAN AND DIU</option><option  value='8'> DELHI</option><option  value='9'> GOA</option><option  value='10'> GUJARAT</option><option  value='11'> HARYANA</option><option  value='12'> HIMACHAL PRADESH</option><option  value='13'> JAMMU AND KASHMIR</option><option  value='14'> JHARKHAND</option><option  value='15'> KARNATAKA</option><option  value='16'> KERALA</option><option  value='38'> LADAKH</option><option  value='36'> LAKSHADWEEP</option><option  value='17'> MADHYA PRADESH</option><option  value='18'> MAHARASHTRA</option><option  value='19'> MANIPUR</option><option  value='20'> MEGHALAYA</option><option  value='21'> MIZORAM</option><option  value='22'> NAGALAND</option><option  value='23'> ODISHA</option><option  value='24'> PUDUCHERRY</option><option  value='25'> PUNJAB</option><option  value='26'> RAJASTHAN</option><option  value='27'> SIKKIM</option><option  value='28'> TAMIL NADU</option><option  value='37'> TELANGANA</option><option  value='29'> TRIPURA</option><option  value='31'> UTTARAKHAND</option><option  value='30'> UTTAR PRADESH</option><option  value='32'> WEST BENGAL</option> 
-                        </select>
-                      </td>
-                      <td>
-                      <div id ='citydata1'>
-                        <select name="citydistr_o" class="style16" id="citydistr_o1"> 
-                          <option value="" selected="selected">Select</option>                 
-                         </select>
-                      </div>
-                      </td>
-                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="emailid_o" onblur="trim1(this)" maxlength="50" value=""></td>
-                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="phoneno_o" maxlength="15" onKeyUp="chkPhone(this)" onblur="trim1(this)" value="" size="10" ></td>
-                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="mobile_o" maxlength="15" onKeyUp="chkPhone(this)" onblur="trim1(this)" value="" size="10" ></td>
-                      <td>&nbsp; &nbsp;&nbsp;<br></td>
-                    </tr>
-                    
-                    <tr>								
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>								
-                      <td  height="3"  valign="top" colspan=2 nowrap bgcolor="#F3F3F3" class="text style38"><font color=""> &nbsp;<font size="">Minimum One contact number is Mandatory</font></font> </td>
-                    </tr>															    		
-                  </table>
-                  
-                  <table  align=right>
-                    <tr>
-                      <td><br></td>
-                      <td><input type="button" onclick="addInput()" name="add" value="Add" /></td>
-                      <td><input type="button" onclick="delowners()" name="add" value="Delete" /></td>
-                    </tr>
-                  </table>	
-                  </td>
-                 </tr>
-             
-                <tr>
-                    <td colspan=5>&nbsp;
-                      <img id="capt" name="capt" src="captcha.jsp" style="height:35px;width:150px;" align="middle" >
-                      <img align="middle" src="loadingzoho.gif" alt="Refresh Image" title='Refresh Image' width="23px" height="23px" onclick="refreshCaptcha();" ></img>
-                    </td>
-                </tr>
-                
-                 <tr>
-                    <td colspan=5>
-                      Type the code shown above: &nbsp; <input name="captchaval" type="text" id="captchaval" size="25" maxlength="6" AUTOCOMPLETE=OFF > 
-                    </td>
-                  </tr>
-                  
-                    
-                <tr align=center>
-                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" colspan=3 align="center">
-                <!--  	<input type=button onClick="subm();" value=Submit name="submitb">	-->  
-                    <input type=button onClick="subm(0);" value=Submit name="submitb">
-                    <input type=button onClick="showd()" value="Reset"> 
-                    <br>
-                  </td>
-                </tr>	
-                  
-                <tr>
-                  <td>
-                   Fields marked <font color="red">*</font> are Mandatory
-                  </td>
-                </tr>
-                
-                <tr><td><br><br></td></tr>	
-                
-                <tr align=right>
-                  <td colspan="6" height="100%">
-                  <table  width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
-                    <tr bgcolor="#95CFFF" background="image/heading.gif" align='right'>
-                      <td height="15" align="left" colspan="2" nowrap background="image/heading.gif" class="style38"><font color="white" > <strong>Best Viewed in Internet Explorer 6+ / chrome 20+ / Firefox 4+</strong></font></td>
-                      <td height="15" colspan="2" nowrap background="image/heading.gif" class="style38"><font color="#ffffff"><strong>Designed and Developed by : </strong></font><font color="#ffffff"><strong>National Informatics Centre</strong><br></font></td>
-                    </tr>
-                  </table>		
-                  </td>
-                </tr>					
-              </table>
-            </form>
-          </td>
-        </tr>
-    </table>
+              </table>		
+              </td>
+            </tr>					
+          </table>
+        </form>
+      </td>
+    </tr>
+</table>
+
+</body>
   
-    </body>
-      
-    </html>
-      
-    
-    
+</html>
+  
+
