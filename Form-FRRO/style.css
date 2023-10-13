@@ -1,0 +1,46 @@
+body {
+  background-image: url(/Form-FRRO/page_bg.gif);
+ }
+.style10 {color: #FF0000}
+.style11 {font-size: 18px}
+.style12 {font-size: 10pt}
+.style13 {color: #666666}
+.style14 {color: #FFFFFF}
+.style15 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+   }
+.style16 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #444444;
+   }
+.style38 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #0066CC
+   }
+.style39 {
+    font-size: 11px;
+    color: #000000;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+.style43 {cursor: default; font-size: 12px; color: #0066FF;}
+.style46 {
+    font-family: Verdana, Tahoma;
+    color: #CC33CC;
+    font-weight: bold;
+   }
+.style50 {color: #0066CC; font-weight: bold; }
+.style51 {color: #CC33CC}
+
+.fieldboxes {
+  color: #333333;
+  font-size: 12px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+
+    }		
