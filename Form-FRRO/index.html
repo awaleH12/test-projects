@@ -1,0 +1,485 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FRRO Form C</title>
+      <link rel="stylesheet" href="style.css">  
+    </head>
+    
+    <body>
+    
+    
+    <table width="77%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="white" style="border:1px solid #ffffff; -webkit-border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; border-radius:10px;">  
+      	<!--top nav  -->
+        <tr class="top-nav">				
+          <td>
+            <table  width="100%" height="85" cellpadding="0" cellspacing="0"  style="border:0px solid #ffffff; -webkit-border-radius:100px; -moz-border-radius:100px; -ms-border-radius:100px; border-radius:100px;">
+              <tr>
+                <td width="10%"><img src="logo.jpg" width="80" height="80" style="border: 2px double white; border-radius: 50%; margin: 0.5rem;" /></td>
+                <td align="center"><font style="padding-left: 50px"  color="white" size="5"><strong>User Registration for Form 'C' and Form 'S' </strong></font></td>
+                <td valign="bottom" >
+                  <font color="white">
+                    <div id="timer" style="float: right; padding: 10px;font-size: medium;font-family: Arial, Helvetica, sans-serif;vertical-align: bottom;">11- Oct -2023 Fri 10:00PM Mogadishu Time</div>
+                  </font>
+                </td>
+              </tr>
+            </table>
+                </td>			
+        </tr>	
+        
+        <!-- login and back nav -->
+        <tr bgcolor="#95CFFF" background="/form-FRRO/heading.gif" align='right'>
+          <td height="15" colspan="8" nowrap background="/form-FRRO/heading.gif" class="style38" >
+            <strong>
+              <a style="text-decoration: none;" href = "#" ><font color="#ffffff">Back</font></a>&nbsp;&nbsp;
+              <a style="text-decoration: none" href = "#" ><font color="#ffffff">Login</font></a>&nbsp;
+            </strong>
+          </td>				
+        </tr>
+            
+        <tr>
+          <td width="100%" valign="top">
+            <form name="Registration" method="post" action="" htmlEscape="true">
+              <table width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="1" bordercolor="#FFDBAE" bgcolor="#FFFFFF">
+                <input type="hidden" size="25" maxlength="25" AUTOCOMPLETE=OFF name="t4g" value="6YKJMB9E"  />		
+                <tr bgcolor="#95CFFF" background="/form-FRRO/heading.gif">
+                  <td height="15" colspan="2" nowrap background="/form-FRRO/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Individual Registration&nbsp;</font></strong></td>
+                  <td height="15" colspan="1" nowrap background="/form-FRRO/heading.gif" class="style38" ><strong><font color="#ffffff">&nbsp;Help&nbsp;</font></strong></td>
+                </tr>					
+              
+                <tr>
+                  <td id="usid" height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">User ID <font color="red">* </font><br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <input AUTOCOMPLETE=OFF  name="u_id" type="text" class="fieldboxes" id="u_id" size="20" maxlength="20" value="" onKeyUp="chkStringuserids(this);" onBlur='CheckUser(this.value)' /><div id='useralert'></div>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">User ID is case sensitive, minimum one alphabetic character and minimum one numeric character<br> </td>
+                </tr>
+                
+              
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Password <font color="red">*</font>  </td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                      <input AUTOCOMPLETE=OFF  name="u_pwd" class="fieldboxes" type="password" id="u_pwd" size="50" maxlength="50" value=""/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38"> min 8 chars,use at least one special character <br>(/ . [~ ! @ ' # $ % ^ & * ? _ ~ - , () ] + / )! "),number,lowercase,<br>uppercase letter <br></td>
+                </tr>
+                
+              
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Confirm Password <font color="red">*</font>  </td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                      <input AUTOCOMPLETE=OFF  name="u_repwd" class="fieldboxes" type="password" onKeyUp=""  id="u_repwd" size="50" maxlength="50" value=""/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
+                </tr>
+                
+                
+                <tr bgcolor="#95CFFF" background="form-FRRO/heading.gif">
+                  <td height="15" colspan="2" nowrap background="/Form-FRRO/heading.gif" class="style38" >
+                    <strong><font color="#ffffff">If you forget your password we will identify you with this information<br></font></strong>
+                  </td>
+                  <td height="15" colspan="1" nowrap background="/Form-FRRO/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
+                </tr>
+              
+                <tr>		
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Security Question <font color="red">*</font>  </td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <font size="1">
+                      <select name="u_secques" class="style16" id="u_secques">
+                        <option selected disabled>Select</option>
+                        <option  value='2'> What is the name of the hospital where you were born?</option><option  value='4'> what is your childhood nickname?</option><option  value='3'> What is the name of your favorite book?</option><option  value='1'> What is your favorite author?</option><option  value='5'> where did you meet your spouse?</option>
+                      </select>
+                    </font>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;In case you forget password, we will identify <br>you by this<br></td>
+                </tr>
+                
+        
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Your Answer <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+               
+                    <input name="u_secans" AUTOCOMPLETE=OFF class="fieldboxes" type="text" id="u_secans" size="50" maxlength="150" value="" />
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+              
+                    <input name="u_name" AUTOCOMPLETE=OFF class="fieldboxes" type="text" id="u_name" size="50" maxlength="50" value="" />
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">Sex <font color="red">*</font>&nbsp; </div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF" class="style16">
+                    <font size="3">
+                      <select name="u_gender" class="style16" id="u_gender">
+                        <option selected disabled>Select</option>
+                        <option  value='M'> Male</option><option  value='F'> Female</option>							
+                      </select>
+                    </font>
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="helpText">&nbsp;</td>
+                </tr>
+                
+        
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">Date of Birth <font color="red">*</font> <br></div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                    <input type="date" class="fieldboxes" AUTOCOMPLETE=OFF   name="u_dob" id="u_dob" maxlength="10">
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br></td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Designation <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <input name="u_designation" type="text" AUTOCOMPLETE=OFF class="fieldboxes" id="u_designation" size="20" maxlength="50"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                
+                    <input name="u_emailid" type="text" AUTOCOMPLETE=OFF class="fieldboxes" id="u_emailid" size="20" maxlength="50"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;For Correspondence, New Password<br> </td>
+                </tr>
+                
+        
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+              
+                    <input name="u_mobile" type="text" AUTOCOMPLETE=OFF id="u_mobile" size="20" maxlength="15"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory<br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            
+                    <input name="u_phone" type="text" AUTOCOMPLETE=OFF class="fieldboxes" id="u_phone" size="20" maxlength="15"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+        
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Nationality <font color="red">*</font></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <font size="1">
+                      <select name="u_nationality" id="u_nationality" class="style16" id="" >
+                        <option selected disabled>Select</option>		
+                        <option value="SOM">Somalia</option>
+                        <option value="KEN">kenya</option>
+                        <option  value='DZA'> ALGERIA</option>
+                        <option  value='AGO'> ANGOLA</option>
+                        <option value="Other">Other</option>			
+                      </select>
+                    </font>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+        
+                <tr bgcolor="#95CFFF" background="/Form-FRRO/heading.gif"> 			
+                  <td height="15" colspan="2" nowrap background="/Form-FRRO/heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc. Details</font></strong></td>
+                  <td height="15" colspan="1" nowrap background="/Form-FRRO/heading.gif" class="style38" ><strong><font color="#ffffff"></font></strong></td>
+                </tr>
+                
+                <tr>
+                  <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Name <font color="red">*</font> <br></td>
+                  <td height="3" valign="middle" bgcolor="#FFFFFF" >
+                    <input name="name" type="text" AUTOCOMPLETE=OFF  class="fieldboxes" id="name" size="50" maxlength="50"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Capacity <font color="red">*</font> <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <input name="capacity" type="text" AUTOCOMPLETE=OFF  class="fieldboxes" id="capacity" size="6" maxlength="6"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+                
+                <tr>		
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Address <font color="red">*</font>   </td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                    <font size="1">
+                    <textarea name="address" id="address"  cols="40" class="fieldboxes"></textarea>
+                    </font>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+              
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">State <font color="red">*</font> </div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                    <select name="state" class="style16" id="state">
+                      <option selected disabled>Select</option>
+                      <option value="Banadir">Banadir</option>
+                      <option value="Lower-Juba">Lower-Juba</option>
+                      <option value="North-Eastern">North-Eastern</option>
+                      <option value="Central-Province">Central-Province</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">City/District <font color="red">*</font> </div>								
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                  <div id="citydata">
+                    <select name="city_distr" class="style16" id="city_distr">
+                      <option selected disabled>Select</option>
+                      <option value="Somalia">Mogadishu</option>
+                      <option value="kenya">Nairobi</option>
+                      <option value="Other">Other</option>        
+                    </select>
+                  </div>     
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+                </tr>
+                
+                <tr id="frroblock">
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">FRRO Description<font color="red">*</font> </div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                  <div id="frrodatadiv">
+                    <select name="u_frrodesc" class="style16" id="u_frrodesc"  >
+                      <option selected disabled>Select</option>
+                      <option value="NA">N/A</option>
+                    </select>
+                    </div>
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">Accomodation Type <font color="red">*</font> </div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                  <div id=accotypedata>
+                    <select name="acco_type" class="style16" id="acco_type">
+                      <option selected disabled>Select</option>
+                      <option value="Hospital">Hospital</option>
+                      <option value="Hotel">Hotel</option>
+                      <option value="guest-house">Guest House</option>
+                      <option  value='S'> Service Apartment </option>
+                      <option value="O">Other</option>
+                    </select>
+                    </div>
+                  </td>						 
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="11" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16">
+                    <div align="right">Accomodation Grade <font color="red">*</font> </div>
+                  </td>
+                  <td height="11" valign="middle" bgcolor="#FFFFFF">
+                  <div id=accom_grade_id>
+                    <select name="star_rat" class="style16" id="star_rat">
+                      <option selected disabled>Select</option>                
+                      <option  value='1s'> One Star</option>
+                      <option  value='2s'> Two Star</option>
+                      <option  value='3s'> Three Star</option>
+                      <option  value='4s'> Four Star</option>
+                      <option  value='5s'> Five Star</option>
+                      <option  value='6s'> Others</option>	 
+                    </select>
+                  </div>
+                  </td>
+                  <td  height="11"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp; <br></td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Email ID : <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+                
+                    <input name="email" type="text" AUTOCOMPLETE=OFF  class="fieldboxes" id="email" size="20" maxlength="50" value="" />		
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+                
+                <tr>
+                  <td height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Mobile : <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+            
+                    <input name="mcontact" type="text" AUTOCOMPLETE=OFF class="fieldboxes" id="mcontact" size="20" maxlength="15"/>
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;Minimum One contact number is Mandatory </td>
+                </tr>
+                
+                
+                <tr>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" align="right">Phone Number : <br></td>
+                  <td height="3"  valign="middle" bgcolor="#FFFFFF" >
+              
+                    <input name="contact" type="text" AUTOCOMPLETE=OFF 	class="fieldboxes" 	onKeyUp="chkPhone(this)" id="contact" size="20" maxlength="15" value="" />
+                  </td>
+                  <td  height="3"  valign="top" nowrap bgcolor="#F3F3F3" class="text style38">&nbsp;<br> </td>
+                </tr>
+                
+                
+                <tr bgcolor="#95CFFF" background="/Form-FRRO/heading.gif">
+                  <td height="15" colspan="3" nowrap background="/Form-FRRO/heading.gif" class="style38" >&nbsp;<strong><font color="#ffffff">Hotel / Guest House / Dharamshala / Institute / Individual House etc.&nbsp; </font></strong><strong><font color="#ffffff"> Owner's Details </font></strong></td>							
+                </tr>
+        
+                <tr>
+                  <td colspan = "3">
+                  <div id="owners">
+                  
+                  </div>
+                  <table width="100%" border="0" align="center">
+                    <tr>
+                      <td>Name <font color="red">*</font></td>
+                      <td>Address <font color="red">*</font></td>
+                      <td>State <font color="red">*</font></td>
+                      <td>City/Dist. <font color="red">*</font></td>
+                      <td>Email-ID</td>
+                      <td>Phone No.</td>
+                      <td>Mobile</td>
+                      <td></td>
+                    </tr> 
+                    <tr>
+                      <td><input type="text" maxlength="50" AUTOCOMPLETE=OFF  class="fieldboxes" name="name_o" value=""></td>
+                      <td><input type="text" maxlength="150" AUTOCOMPLETE=OFF  class="fieldboxes" name="address_o" value=""></td>
+                      <td>
+                        <select name="state_o" class="style16" id="state_o"> 
+                          <option selected disabled>Select</option>
+                          <option value="Banadir">Banadir</option>
+                          <option value="Lower-Juba">Lower-Juba</option>
+                          <option value="North-Eastern">North-Eastern</option>
+                          <option value="Central-Province">Central-Province</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </td>
+                      <td>
+                      <div id ='citydata1'>
+                        <select name="citydistr_o" class="style16" id="citydistr_o1"> 
+                          <option selected disabled>Select</option>
+                          <option value="Somalia">Mogadishu</option>
+                          <option value="kenya">Nairobi</option>
+                          <option value="Other">Other</option>                 
+                         </select>
+                      </div>
+                      </td>
+                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="emailid_o" maxlength="50" value=""></td>
+
+                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="phoneno_o" maxlength="15" value="" size="10" ></td>
+
+                      <td><input type="text" AUTOCOMPLETE=OFF  class="fieldboxes"  name="mobile_o" maxlength="15" size="10" ></td>
+                      <td>&nbsp; &nbsp;&nbsp;<br></td>
+                    </tr>
+                    
+                    <tr>								
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>								
+                      <td  height="3"  valign="top" colspan=2 nowrap bgcolor="#F3F3F3" class="text style38"><font color=""> &nbsp;<font size="">Minimum One contact number is Mandatory</font></font> </td>
+                    </tr>															    		
+                  </table>
+                  <!-- fisrt buttons aligned right -->
+                  <table  align=right>
+                    <tr>
+                      <td><br></td>
+                      <td><input type="button" name="add" value="Add" /></td>
+                      <td><input type="button" name="add" value="Delete" /></td>
+                    </tr>
+                  </table>	
+                  
+                  </td>
+                 </tr>
+             
+                <tr>
+                    <td colspan=5>&nbsp;
+                      <img id="capt" name="capt" src="/Form-FRRO/captcha.jsp" style="height:35px;width:150px;" align="middle" >
+                      <img align="middle" src="/Form-FRRO/loadingzoho.gif" alt="Refresh Image" title='Refresh Image' width="23px" height="23px"></img>
+                    </td>
+                </tr>
+                
+                 <tr>
+                    <td colspan=5>
+                      Type the code shown above: &nbsp; <input name="captchaval" type="text" id="captchaval" size="25" maxlength="6" AUTOCOMPLETE=OFF > 
+                    </td>
+                  </tr>
+                  
+                <!-- bottom buttons aligned center -->
+                <tr align=center>
+                  <td  height="3" valign="middle" nowrap bgcolor="#FFFFFF" class="text style16" colspan=3 align="center">
+                 
+                    <input type=button  value=Submit name="submitb">
+                    <input type=button  value="Reset"> 
+                    <br>
+                  </td>
+                </tr>	
+                  
+                <tr>
+                  <td>
+                   Fields marked <font color="red">*</font> are Mandatory
+                  </td>
+                </tr>
+                
+                <tr><td><br><br></td></tr>	
+                
+                <!-- footer text -->
+                <tr align=right>
+                  <td colspan="6" height="100%">
+                  <table  width="100%" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+                    <tr bgcolor="#95CFFF" background="/form-FRRO/heading.gif" align='right'>
+                      <td height="15" align="left" colspan="2" nowrap background="/form-FRRO/heading.gif" class="style38"><font color="white" > <strong>chrome 20+ / Firefox 4+</strong></font></td>
+
+                      <td height="15" colspan="2" nowrap background="/form-FRRO/heading.gif" class="style38"><font color="#ffffff"><strong>Designed and Developed by :</strong></font><font color="#ffffff"><strong>Hassan Awale</strong><br></font></td>
+                    </tr>
+                  </table>		
+                  </td>
+                </tr>					
+              </table>
+            </form>
+          </td>
+        </tr>
+    </table>
+   
+    </body>
+      
+    </html>
+      
+    
+    
